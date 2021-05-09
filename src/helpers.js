@@ -70,7 +70,7 @@ export const styles = {
     },
     results: {
       display: "flex",
-      margin: "0 auto",
+      margin: "auto",
       textAlign: "center",
       flexDirection: "column",
     },
