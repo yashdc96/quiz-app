@@ -15,7 +15,7 @@ const DifficultyOptions = () => {
     const classes = useStyles();
     const [currentQuizStep, setCurrentQuizStep] = useState("start");
     const [questionCount, setQuestionCount] = useState(-1);
-    const [correctCounter, setCorrectCounter] = useState(null);
+    const [correctCounter, setCorrectCounter] = useState(0);
 
     const fetchQuizData = async () => {
         try {
@@ -77,9 +77,6 @@ const DifficultyOptions = () => {
         setCurrentQuizStep("start");
         setQuestionCount(-1);
         window.scrollTo(0, "20px");
-        if(time===0){
-            alert("You ran out of time!")
-        }
     };
 
 
